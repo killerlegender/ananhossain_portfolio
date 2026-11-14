@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/assets/AH_64x64.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Anan Hossain</title>
+
+    <link rel="stylesheet" href="skills.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="skills-page">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">A<span>H</span></a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="socials.html">My Songs</a>
+        </nav>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle">☾</button>
+
+            <a href="socials.html" class="connect">
+                Let's Connect <span>→</span>
+            </a>
+        </div>
+
+    </header>
+
+
+    <!-- SKILLS CONTENT -->
+    <main class="skills-content">
+
+        <h1>My <span>Skills</span> & Experience</h1>
+
+        <div class="skills-grid">
+
+            <!-- PYTHON -->
+            <div class="skill-card">
+                <div class="skill-icon">
+    <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+</div>
+                <h2>Python</h2>
+                <p>Programming &<br>Automation</p>
+            </div>
+
+            <!-- JAVASCRIPT -->
+            <div class="skill-card">
+                <div class="skill-icon">
+    <img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
+</div>
+                <h2>JavaScript</h2>
+                <p>Interactive Web<br>Development</p>
+            </div>
+
+            <!-- LINUX -->
+            <div class="skill-card">
+                <div class="skill-icon">
+    <img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux">
+</div>
+                <h2>Linux</h2>
+                <p>Command Line &<br>System Admin</p>
+            </div>
+
+            <!-- WEB DESIGN -->
+            <div class="skill-card">
+                <div class="skill-icon design-icon">◉</div>
+                <h2>Web Designing</h2>
+                <p>Modern & Responsive<br>Design</p>
+            </div>
+
+            <!-- C++ -->
+            <div class="skill-card">
+                <div class="skill-icon">
+    <img src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++">
+</div>
+                <h2>C++</h2>
+                <p>Logic Building &<br>Problem Solving</p>
+            </div>
+
+            <!-- NODE JS -->
+            <div class="skill-card">
+                <div class="skill-icon">
+    <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="Node.js">
+</div>
+                <h2>Node.js</h2>
+                <p>Backend Development</p>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-card">
+                <div class="skill-icon">
+    <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+</div>
+                <h2>HTML</h2>
+                <p>Web Structure &<br>Styling</p>
+            </div>
+
+            <!-- JAVA -->
+           <div class="skill-card">
+                <div class="skill-icon java-icon">♨</div>
+      
+                <h2>Java</h2>
+                <p>Object-Oriented<br>Programming</p>
+            </div>
+
+            <!-- SQL -->
+            <div class="skill-card">
+                <div class="skill-icon">
+    <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="SQL">
+</div>
+                <h2>SQL</h2>
+                <p>Database Management</p>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script>
+    const themeToggle = document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+
+        themeToggle.textContent =
+            document.body.classList.contains("light-mode")
+            ? "☀" : "☾";
+    });
+</script>
+
+</body>
+</html>
+
+

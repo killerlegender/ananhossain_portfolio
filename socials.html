@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Anan Hossain</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="about-page">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <a href="index.html" class="logo">A<span>H</span></a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="socials.html"class="active">My Songs</a>
+        </nav>
+
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle">☾</button>
+            <a href="socials.html" class="connect">
+                Let's Connect <span>→</span>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <main class="about-hero">
+
+        <div class="about-content">
+
+            <h1> More About <span>Me</span></h1>
+
+            <div class="about-description">
+
+                <p>
+                    Except my skills in bulding building software 
+                    and digital experiences,
+                    I am also a singer who started my musical journey in 2026.
+
+                </p>
+
+                
+
+
+    </main>
+
+ 
+
+</div>
+
+<script>
+    const themeToggle = document.getElementById("themeToggle");
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+
+        themeToggle.textContent =
+            document.body.classList.contains("light-mode")
+            ? "☀" : "☾";
+    });
+</script>
+
+</body>
+</html>
+
+
+
