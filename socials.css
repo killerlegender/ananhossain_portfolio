@@ -1,0 +1,402 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #03000c;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    height: 75px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(3, 0, 12, 0.85);
+    border-bottom: 1px solid rgba(185, 0, 255, 0.35);
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.logo span,
+.music-footer span {
+    color: #c000ff;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #e000ff;
+    text-shadow: 0 0 12px #bd00ff;
+}
+
+.connect-button {
+    color: white;
+    text-decoration: none;
+    border: 1px solid #c000ff;
+    padding: 10px 17px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(190, 0, 255, 0.4);
+    font-size: 13px;
+}
+
+/* MUSIC BACKGROUND */
+
+.music-page {
+    min-height: 100vh;
+    padding: 65px 7% 30px;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(2, 0, 12, 0.18),
+            rgba(2, 0, 12, 0.72) 35%,
+            rgba(2, 0, 12, 0.94) 100%
+        ),
+        url("assets/music-background.png");
+
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* INTRO */
+
+.music-intro {
+    text-align: center;
+    padding: 45px 0 65px;
+}
+
+.eyebrow {
+    color: #d000ff;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 18px;
+}
+
+.music-intro h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 900;
+}
+
+.music-intro h1 span,
+.section-heading h2 span {
+    color: #d000ff;
+    text-shadow: 0 0 20px rgba(190, 0, 255, 0.6);
+}
+
+.intro-text {
+    margin-top: 15px;
+    color: #d0c6df;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* SECTION HEADINGS */
+
+.player-section,
+.tracks-section,
+.platform-section {
+    max-width: 1100px;
+    margin: 0 auto 75px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.section-number {
+    color: #d000ff;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+}
+
+/* PLAYER */
+
+.player-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+    border: 1px solid rgba(190, 0, 255, 0.55);
+    border-radius: 18px;
+    background: rgba(7, 2, 23, 0.83);
+    box-shadow: 0 0 30px rgba(135, 0, 255, 0.16);
+    backdrop-filter: blur(12px);
+}
+
+.album-art {
+    width: 260px;
+    aspect-ratio: 1;
+    flex-shrink: 0;
+    border-radius: 13px;
+    overflow: hidden;
+    background: #09001c;
+    border: 1px solid #b900ff;
+    box-shadow: 0 0 25px rgba(190, 0, 255, 0.35);
+}
+
+.album-art img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.player-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.track-label {
+    color: #d000ff;
+    font-size: 11px;
+    letter-spacing: 3px;
+}
+
+.player-details h2 {
+    font-size: 30px;
+    margin: 12px 0 7px;
+}
+
+.artist-name {
+    color: #b9a9ca;
+    margin-bottom: 25px;
+}
+
+.audio-player {
+    width: 100%;
+}
+
+.audio-player audio {
+    width: 100%;
+    accent-color: #c000ff;
+}
+
+.player-note {
+    font-size: 12px;
+    color: #a99bb9;
+    margin-top: 12px;
+}
+
+/* TRACK LIST */
+
+.track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.track-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 15px 20px;
+    background: rgba(8, 2, 25, 0.85);
+    border: 1px solid rgba(170, 0, 255, 0.3);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.track-item:hover {
+    border-color: #d000ff;
+    box-shadow: 0 0 18px rgba(190, 0, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+.track-art {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #9200ff, #18002e);
+    font-weight: bold;
+}
+
+.track-info {
+    flex: 1;
+}
+
+.track-info h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.track-info p {
+    font-size: 12px;
+    color: #a99bb9;
+}
+
+.track-status {
+    color: #d000ff;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+/* STREAMING PLATFORMS */
+
+.platform-description {
+    color: #b9a9ca;
+    margin: -10px 0 25px;
+    font-size: 14px;
+}
+
+.platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.platform-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 19px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(180, 0, 255, 0.4);
+    border-radius: 12px;
+    background: rgba(8, 2, 25, 0.85);
+    transition: 0.3s;
+}
+
+.platform-card:hover {
+    border-color: #e000ff;
+    box-shadow: 0 0 20px rgba(190, 0, 255, 0.35);
+    transform: translateY(-4px);
+}
+
+.platform-icon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: linear-gradient(135deg, #b900ff, #4700a0);
+    font-weight: bold;
+}
+
+.platform-arrow {
+    margin-left: auto;
+    color: #d000ff;
+}
+
+/* FOOTER */
+
+.music-footer {
+    text-align: center;
+    padding: 45px 0 20px;
+    border-top: 1px solid rgba(180, 0, 255, 0.35);
+}
+
+.music-footer h2 {
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.music-footer p {
+    color: #b9a9ca;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.music-footer .copyright {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #786b88;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .platform-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .music-page {
+        padding: 35px 5% 20px;
+        background-attachment: scroll;
+    }
+
+    .player-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 22px;
+    }
+
+    .album-art {
+        width: min(100%, 230px);
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .track-status {
+        font-size: 8px;
+    }
+}
+
+
+
+
