@@ -4,17 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Anan Hossain</title>
-    <link rel="stylesheet" href="about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Anan Hossain | Music</title>
+    <link rel="stylesheet" href="socials.css">
 </head>
+
 <body>
 
-<div class="about-page">
-
-    <!-- NAVBAR -->
     <header class="navbar">
-
         <a href="index.html" class="logo">A<span>H</span></a>
 
         <nav class="nav-links">
@@ -23,84 +19,170 @@
             <a href="skills.html">Skills</a>
             <a href="services.html">Services</a>
             <a href="projects.html">Projects</a>
-            <a href="socials.html"class="active">My Songs</a>
+            <a href="socials.html" class="active">Music</a>
         </nav>
 
-        <div class="nav-right">
-            <button class="theme-toggle" id="themeToggle">☾</button>
-            <a href="socials.html" class="connect">
-                Let's Connect <span>→</span>
-            </a>
-        </div>
-
+        <a href="#music" class="connect-button">Listen Now →</a>
     </header>
 
-    <!-- ABOUT SECTION -->
-    <main class="about-hero">
+    <main class="music-page" id="music">
 
-        <div class="about-content">
+        <section class="music-intro">
+            <p class="eyebrow">THE OFFICIAL MUSIC SPACE</p>
+            <h1>My <span>Music</span></h1>
+            <p class="intro-text">
+                Discover my sound, explore my releases,
+                and listen to my music.
+            </p>
+        </section>
 
-            <h1> More About <span>Me</span></h1>
+        <section class="player-section">
 
-            <div class="about-description">
+            <div class="section-heading">
+                <span class="section-number">01</span>
+                <h2>Now <span>Playing</span></h2>
+            </div>
 
-                <p>
-                    Except my skills in bulding building software 
-                    and digital experiences,
-                    I am also a singer who started my musical journey in 2026.
+            <div class="player-card">
 
-                </p>
+                <div class="album-art">
+                    <img src="assets/stero-cover.png" alt="Stero Funk cover artwork">
+                </div>
 
-                
+                <div class="player-details">
+                    <p class="track-label">FEATURED TRACK</p>
+                    <h2>Stero</h2>
+                    <p class="artist-name">Anan Hossain</p>
 
+                    <div class="audio-player">
+                        <audio id="audioPlayer" controls preload="metadata">
+                            <source src="assets/stero.mp3" type="audio/mpeg">
+                            Your browser does not support audio.
+                        </audio>
+                    </div>
+
+                    <p class="player-note">
+                        Listen to Stero by Anan Hossain.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="tracks-section">
+
+            <div class="section-heading">
+                <span class="section-number">02</span>
+                <h2>My <span>Releases</span></h2>
+            </div>
+
+            <div class="track-list">
+
+                <div class="track-item">
+                    <div class="track-art">01</div>
+                    <div class="track-info">
+                        <h3>Stero</h3>
+                        <p>Anan Hossain · Single</p>
+                    </div>
+                    <span class="track-status">AVAILABLE NOW</span>
+                </div>
+
+                <div class="track-item">
+                    <div class="track-art">02</div>
+                    <div class="track-info">
+                        <h3>Coming Soon</h3>
+                        <p>Anan Hossain · Upcoming Release</p>
+                    </div>
+                    <span class="track-status">COMING SOON</span>
+                </div>
+
+                <div class="track-item">
+                    <div class="track-art">03</div>
+                    <div class="track-info">
+                        <h3>Coming Soon</h3>
+                        <p>Anan Hossain · Upcoming Release</p>
+                    </div>
+                    <span class="track-status">COMING SOON</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="platform-section">
+
+            <div class="section-heading">
+                <span class="section-number">03</span>
+                <h2>Listen <span>Everywhere</span></h2>
+            </div>
+
+            <p class="platform-description">
+                Find and stream my music on your favourite platform.
+            </p>
+
+            <div class="platform-grid">
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">S</span>
+                    <span>Spotify</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">A</span>
+                    <span>Apple Music</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">▶</span>
+                    <span>YouTube Music</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">T</span>
+                    <span>TIDAL</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">A</span>
+                    <span>Amazon Music</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">D</span>
+                    <span>Deezer</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">P</span>
+                    <span>Pandora</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+                <a href="#" class="platform-card">
+                    <span class="platform-icon">SC</span>
+                    <span>SoundCloud</span>
+                    <span class="platform-arrow">↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer class="music-footer">
+            <h2>ANAN <span>HOSSAIN</span></h2>
+            <p>Build. Create. Make Music.</p>
+            <p class="copyright">© 2026 Anan Hossain. All rights reserved.</p>
+        </footer>
 
     </main>
 
-                
-<!-- FOOTER SECTION -->
-
-<footer class="portfolio-footer">
-
-    <div class="footer-line"></div>
-
-    <div class="footer-content">
-
-        <h2>
-            ANAN <span>HOSSAIN</span>
-        </h2>
-
-        <p class="footer-tagline">
-            Build. Create. Make Music.
-        </p>
-
-        <p class="footer-copyright">
-            © 2026 Anan Hossain. All rights reserved.
-        </p>
-
-    </div>
-
-</footer>
- 
-
-</div>
-
-<script>
-    const themeToggle = document.getElementById("themeToggle");
-
-    themeToggle.addEventListener("click", () => {
-        document.body.classList.toggle("light-mode");
-
-        themeToggle.textContent =
-            document.body.classList.contains("light-mode")
-            ? "☀" : "☾";
-    });
-</script>
-
 </body>
 </html>
-
-            
-            
-
-
 
